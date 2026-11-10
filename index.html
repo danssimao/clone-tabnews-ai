@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="midnight">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Juliana Basilio — Folk Horror &amp; Folclore</title>
+<meta name="description" content="Juliana Basilio é escritora de Folk Horror e Folclore. Contos, romances, ensaios e um arquivo vivo de tradições e assombros." />
+<meta name="theme-color" content="#0a0a0b" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0b'/%3E%3Cpath d='M16 4a9 9 0 100 18 9 9 0 000-18zm0 4a5 5 0 010 10V8z' fill='%23c4622d'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<!-- efeitos de atmosfera -->
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<!-- controles fixos -->
+<header class="topbar">
+  <a class="brand" href="#inicio">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-text">Juliana&nbsp;Basilio</span>
+  </a>
+  <div class="topbar-actions">
+    <button class="icon-btn" id="audioBtn" aria-pressed="false" title="Sussurros (áudio ambiente)">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="wave" d="M16.5 8.5a5 5 0 010 7"/></svg>
+      <span class="sr-only">Ativar áudio ambiente</span>
+    </button>
+    <button class="icon-btn" id="themeBtn" title="Alternar lanterna">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a7 7 0 000 14 9 9 0 010-14z"/></svg>
+      <span class="sr-only">Alternar tema</span>
+    </button>
+  </div>
+</header>
+
+<!-- navegação lateral -->
+<nav class="dots" id="dots" aria-label="Seções">
+  <a href="#inicio"   data-dot="inicio"   aria-label="Início"><span></span></a>
+  <a href="#sobre"    data-dot="sobre"    aria-label="Sobre"><span></span></a>
+  <a href="#textos"   data-dot="textos"   aria-label="Textos"><span></span></a>
+  <a href="#arquivo"  data-dot="arquivo"  aria-label="Arquivo do folclore"><span></span></a>
+  <a href="#sinal"    data-dot="sinal"    aria-label="Sinal"><span></span></a>
+  <a href="#contato"  data-dot="contato"  aria-label="Contato"><span></span></a>
+</nav>
+
+<main id="main">
+
+  <!-- ================= INÍCIO ================= -->
+  <section class="panel hero" id="inicio" data-section="inicio">
+    <div class="hero-inner">
+      <p class="kicker reveal">Escritora · Folk Horror · Folclore</p>
+      <h1 class="title" id="heroTitle" data-scramble="Juliana Basilio">Juliana Basilio</h1>
+      <p class="tagline reveal">“O medo não é uma metáfora.<br />É um vizinho.”</p>
+      <p class="lede reveal">
+        Escrevo sobre as coisas que o domingo de uma cidade do interior finge não ouvir: o cachorro que uiva
+        sem motivo, a velhinha que sabe seu nome, o ritual que se repete todo santo dia.
+        Contos, romances e um arquivo vivo de tradições que ninguém quis registrar direito.
+      </p>
+      <div class="cta-row reveal">
+        <a class="btn btn-primary" href="#textos">Ler os textos</a>
+        <a class="btn" href="#arquivo">Entrar no arquivo</a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>role para baixo</span>
+      <i></i>
+    </div>
+  </section>
+
+  <!-- ================= SOBRE ================= -->
+  <section class="panel" id="sobre" data-section="sobre">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="kicker">I — Sobre</p>
+        <h2 class="sec-title">A etiqueta do <em>outro</em></h2>
+      </header>
+
+      <div class="split">
+        <div class="col reveal">
+          <p class="body">
+            Nasci numa cidade do interior onde todo mundo sabia quem não falava com quem.
+            É por isso que escrevo. O Folk Horror me deu o vocabulário técnico para aquilo que
+            a minha avó sabia e nunca escrevia: que existem limites, e que eles não pedem licença.
+          </p>
+          <p class="body">
+            Passo o ano entre arquivos, bibliotecas, cadernos de campo e a voz de gente
+            que tinha vergonha de contar. Traduzo do galego, do português antigo e das
+            sessões de jantar onde os narradores contam de boca fechada. Recolho o que se perde.
+          </p>
+          <p class="body">
+            Quando não escrevo, faço curadoria de traduções, organizo seminários sobre
+            Horror em Terras Comuns e cuido de um arquivo doméstico que já passou de
+            quatro mil itens catalogados.
+          </p>
+        </div>
+
+        <aside class="col reveal">
+          <div class="card-facts">
+            <dl class="facts">
+              <div><dt>Base</dt><dd>Interior de Minas &amp; Terras de Trás-do-Mar</dd></div>
+              <div><dt>Idiomas</dt><dd>Português, Galego, Espanhol, Francês (leitura)</dd></div>
+              <div><dt>Gêneros</dt><dd>Folk Horror, Mitografia, Ensaio de campo</dd></div>
+              <div><dt>Arquivo</dt><dd>4.182 itens catalogados</dd></div>
+              <div><dt>Publicações</dt><dd>2 romances, 3 livros de contos, 1 ensaio</dd></div>
+              <div><dt>Prêmio</dt><dd>Prêmio Coruja — Conto de Folclore (2023)</dd></div>
+            </dl>
+            <ul class="links-inline">
+              <li><a href="#textos">Textos</a></li>
+              <li><a href="#arquivo">Arquivo</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="manifesto reveal">
+            <h3>Manifesto em cinco linhas</h3>
+            <ol>
+              <li>O medo folklórico mora na cozinha, não na floresta.</li>
+              <li>Todo monstro foi alguém que conhecia todo mundo.</li>
+              <li>Traduzir é um ato de responsabilidade.</li>
+              <li>Nenhuma crença é burra; algumas são justas.</li>
+              <li>A sombra é a única testemunha que não mente.</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEXTOS ================= -->
+  <section class="panel" id="textos" data-section="textos">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="kicker">II — Textos</p>
+        <h2 class="sec-title">O que já <em>aconteceu</em></h2>
+        <p class="sec-sub">Clique em qualquer obra para ler a nota de abertura.</p>
+      </header>
+
+      <div class="filters reveal" id="workFilters" role="group" aria-label="Filtrar por categoria">
+        <button class="chip is-active" data-filter="todos">Tudo</button>
+        <button class="chip" data-filter="folk horror">Folk Horror</button>
+        <button class="chip" data-filter="folclore">Folclore</button>
+        <button class="chip" data-filter="ensaios">Ensaios</button>
+        <button class="chip" data-filter="tradução">Traduções</button>
+      </div>
+
+      <div class="works-grid" id="worksGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= ARQUIVO ================= -->
+  <section class="panel" id="arquivo" data-section="arquivo">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="kicker">III — Arquivo</p>
+        <h2 class="sec-title">Bestiário do <em>medo cotidiano</em></h2>
+        <p class="sec-sub">Fichas de campo do que a gente ainda sabe de cor.</p>
+      </header>
+
+      <div class="archive-tools reveal">
+        <div class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+          <input type="search" id="archiveSearch" placeholder="Buscar por nome, região ou tipo…" aria-label="Buscar no arquivo" />
+        </div>
+        <div class="chips" id="archiveFilters" role="group" aria-label="Filtrar por tipo">
+          <button class="chip is-active" data-type="todos">Todos</button>
+          <button class="chip" data-type="mito">Mito</button>
+          <button class="chip" data-type="lenda">Lenda</button>
+          <button class="chip" data-type="crença">Crença</button>
+          <button class="chip" data-type="prática">Prática</button>
+        </div>
+      </div>
+
+      <div class="archive-grid" id="archiveGrid"></div>
+      <p class="empty" id="archiveEmpty" hidden>Nada encontrado. Tente <em>“mula”</em>, <em>“neblina”</em> ou <em>“sertão”</em>.</p>
+    </div>
+  </section>
+
+  <!-- ================= SINAL ================= -->
+  <section class="panel" id="sinal" data-section="sinal">
+    <div class="wrap narrow">
+      <header class="sec-head reveal">
+        <p class="kicker">IV — Sinal</p>
+        <h2 class="sec-title">Peça um <em>presságio</em></h2>
+        <p class="sec-sub">Um instrumento de leitura para quem escribe. Trate com seriedade e não chame de superstição depois.</p>
+      </header>
+
+      <div class="oracle reveal">
+        <div class="oracle-window" id="oracleWindow" role="status" aria-live="polite">
+          <p class="oracle-text" id="oracleText">O mostrador está frio. Toque em <em>pedir um sinal</em>.</p>
+        </div>
+        <button class="btn btn-primary btn-lg" id="oracleBtn">Pedir um sinal</button>
+        <p class="oracle-note" id="oracleNote"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section class="panel" id="contato" data-section="contato">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="kicker">V — Contato</p>
+        <h2 class="sec-title">Escreva <em>antes da meia-noite</em></h2>
+      </header>
+
+      <div class="split">
+        <div class="col reveal">
+          <div class="contact-block">
+            <h3>Para Publicações</h3>
+            <p>Propostas de publicação, direitos de tradução, antologias e revisões.</p>
+            <a class="mail" href="mailto:contato@julianabasilio.com">contato@julianabasilio.com</a>
+          </div>
+          <div class="contact-block">
+            <h3>Para o Arquivo</h3>
+            <p>Conhece uma tradição que merece ser registrada? Me conta por áudio — eu transcrevo tudo.</p>
+            <a class="mail" href="mailto:arquivo@julianabasilio.com">arquivo@julianabasilio.com</a>
+          </div>
+          <div class="contact-block">
+            <h3>Onde me achar</h3>
+            <ul class="socials">
+              <li><a href="#" data-social="Instagram">Instagram</a></li>
+              <li><a href="#" data-social="Newsletter">Newsletter</a></li>
+              <li><a href="#" data-social="RSS">RSS</a></li>
+              <li><a href="#" data-social="YouTube">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col reveal">
+          <form class="form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="fName">Seu nome</label>
+              <input type="text" id="fName" name="name" required placeholder="Como quer ser chamado?" />
+              <small class="err" data-err="name"></small>
+            </div>
+            <div class="field">
+              <label for="fEmail">E-mail</label>
+              <input type="email" id="fEmail" name="email" required placeholder="voce@exemplo.com" />
+              <small class="err" data-err="email"></small>
+            </div>
+            <div class="field">
+              <label for="fSubject">Assunto</label>
+              <select id="fSubject" name="subject">
+                <option>Publicação / proposta</option>
+                <option>Direitos de tradução</option>
+                <option>Contribuição para o arquivo</option>
+                <option>Convite para evento</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fMsg">Mensagem</label>
+              <textarea id="fMsg" name="message" rows="5" required placeholder="Conte o que precisa."></textarea>
+              <small class="err" data-err="message"></small>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+      <footer class="foot">
+        <p>© <span id="year"></span> Juliana Basilio · Escrita sob a lua cheia.</p>
+        <p class="foot-links">
+          <a href="#inicio">Voltar ao topo</a>
+          <span aria-hidden="true">·</span>
+          <a href="#" id="creditsLink">Créditos</a>
+        </p>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<!-- ================= MODAL ================= -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" data-close aria-label="Fechar">&times;</button>
+    <p class="modal-kicker" id="modalKicker"></p>
+    <h3 class="modal-title" id="modalTitle"></h3>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-meta" id="modalMeta"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
