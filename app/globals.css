@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: #fafafa;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.lang-toggle {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.lang-toggle a {
+  font: inherit;
+  color: #aaa;
+  cursor: pointer;
+  padding: 0.1rem 0.2rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.lang-toggle a:hover {
+  color: #555;
+}
+
+.lang-toggle a.active {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.lang-toggle .sep {
+  color: #ccc;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 4vh, 3rem);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+h1 span {
+  color: #888;
+  font-weight: 400;
+}
+
+.intro {
+  max-width: 560px;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: #444;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.status .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 4vw, 3rem);
+}
+
+.skill-group {
+  min-width: 180px;
+}
+
+.skill-group h2 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #999;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.skill-group p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer a {
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: 2px;
+  transition: opacity 0.2s;
+}
+
+footer a:hover {
+  opacity: 0.6;
+}
+
+@media (max-height: 640px) {
+  .screen {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  footer {
+    margin-top: auto;
+  }
+}
